@@ -13,6 +13,8 @@ spec:
       labels:
         app: recommend
     spec:
+      imagePullSecrets:
+        - name: acr-secret
       containers:
         - name: recommend
           image: dg0200cr.azurecr.io/lifesub/recommend:1.0.0
