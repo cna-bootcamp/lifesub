@@ -13,6 +13,8 @@ spec:
       labels:
         app: member
     spec:
+      imagePullSecrets:
+        - name: acr-secret
       containers:
         - name: member
           image: dg0200cr.azurecr.io/lifesub/member:1.0.0
