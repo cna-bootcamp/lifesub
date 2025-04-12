@@ -13,6 +13,8 @@ spec:
       labels:
         app: mysub
     spec:
+      imagePullSecrets:
+        - name: acr-secret
       containers:
         - name: mysub
           image: dg0200cr.azurecr.io/lifesub/mysub:1.0.0
